@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Lab13th"
+AuthUserFile "/home/rahydyn/www/LectureText/.htpasswd"
+require valid-user

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bulma.min.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/jquery.inview-master/jquery.inview-master/jquery.inview.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="./img/python.png.png">
+    <title>Matrix&Filmarks</title>
+</head>
+<body id="body" onload="for (s = window.screen, w = q.width = s.width, h = q.height = s.height, m = Math.random, p = [], i = 0; i < 256; p[i++] = 1); setInterval('9Style=\'rgba(0,0,0,.05)\'9Rect(0,0,w,h)9Style=\'#0F0\';p.map(function(v,i){9Text(String.fromCharCode(3e4+m()*33),i*10,v);p[i]=v>758+m()*1e4?0:v+10})'.split(9).join(';q.getContext(\'2d\').fill'), 33)">
+    <div id="matrix_wrapper">
+        <canvas id="q"></canvas>
+    </div>
+    <div id="container">
+        <main id="main-area">
+            <div id="header">
+                <div class="openbtn">
+                    <div class="openbtn-area">
+                        <span></span><span></span><span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="block">
+                <div id="key_visual"><img src="./img/WindowsXP.jpg" alt=""></div>
+            </div>
+            <div class="block">
+                <div id="contents" class="temp_box">
+                    <div id="card-area">
+                        <div class="card">
+                            <a id="lec_htmlncss" class="anchor"></a>
+                            <div class="card_text">
+                                <div class="card_title">
+                                    <img src="./img/html.png.png" alt="">
+                                    <img src="./img/css.png.png" alt="">
+                                    <p>HTML/CSS</p>
+                                </div>
+                                <div class="card_list">
+                                    <ul>
+                                        <li id="htmlncss1"><a href="https://cha1ra.notion.site/HTML-CSS-63d829597815432eb94af66049292074" target="_blank" rel="noopener noreferrer">文法編</a></li>
+                                        <li id="htmlncss2"><a href="https://cha1ra.notion.site/HTML-CSS-b18161f035f945698e26f68ace0aa7d5" target="_blank" rel="noopener noreferrer">レイアウト・実践編</a></li>
+                                        <li id="htmlncss3"><a href="https://cha1ra.notion.site/jQuery-e394316227e141a8a52434a35189d19b" target="_blank" rel="noopener noreferrer">jQuery入門編</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card_img">
+                                <div class="winxp"><img src="./img/WindowsXP.jpg" alt="" id="img_html"></div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <a id="lec_javascript" class="anchor"></a>
+                            <div class="card_text">
+                                <div class="card_title">
+                                    <img src="./img/javascript.png.png" alt="">
+                                    <p>JavaScript</p>
+                                </div>
+                                <div class="card_list">
+                                    <ul>
+                                        <li id="javascript1">準備中</li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card_img">
+                                <div class="winxp"><img src="./img/WindowsXP.jpg" alt="" id="img_js"></div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <a id="lec_php" class="anchor"></a>
+                            <div class="card_text">
+                                <div class="card_title">
+                                    <img src="./img/php.png.png" alt="">
+                                    <p>php</p>
+                                </div>
+                                <div class="card_list">
+                                    <ul>
+                                        <li id="php1">準備中</li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card_img">
+                                <div class="winxp"><img src="./img/WindowsXP.jpg" alt="" id="img_php"></div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <a id="lec_others" class="anchor"></a>
+                            <div class="card_text">
+                                <div class="card_title">
+                                    <img src="./img/python.png.png" alt="">
+                                    <p>Others</p>
+                                </div>
+                                <div class="card_list">
+                                    <ul>
+                                        <li id="py1">準備中</li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card_img">
+                                <div class="winxp"><img src="./img/WindowsXP.jpg" alt="" id="img_py"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="block">
+                <a id="about_filmarks" class="anchor"></a>
+                <div id="f_title">
+                    <div><img src="./img/filmarks_icon.png" alt=""></div>
+                    <div><p>Filmarks<br>映画を記録するアプリ</p></div>
+                </div>
+                <div class="f_card flex_reverse">
+                    <div class="f_card_text">
+                        <div class="col">
+                            <h1>タイムライン機能</h1>
+                            <p>SNSのように自分の投稿やフォロワーしている人の投稿を見ることができます</p>
+                        </div>
+                    </div>
+                    <div class="f_card_video">
+                        <video src="./img/video/video1.mp4" class="video" muted autobuffer></video>
+                    </div>
+                </div>
+                <div class="f_card">
+                    <div class="f_card_text">
+                        <div class="col">
+                            <h1>トレンド機能</h1>
+                            <p>公開中の映画や特集された映画を見ることができます</p>
+                        </div>
+                    </div>
+                    <div class="f_card_video">
+                        <video src="./img/video/video2.mp4" class="video" muted autobuffer></video>
+                    </div>
+                </div>
+                <div class="f_card flex_reverse">
+                    <div class="f_card_text">
+                        <div class="col">
+                            <h1>サーチ機能</h1>
+                            <p>映画名や出演者名、監督名での検索だけでなく、各種配信サービスで展開中の映画を検索することができます</p>
+                        </div>
+                    </div>
+                    <div class="f_card_video">
+                        <video src="./img/video/video3.mp4" class="video" muted autobuffer></video>
+                    </div>
+                </div>
+                <div class="f_card">
+                    <div class="f_card_text">
+                        <div class="col">
+                            <h1>マイページ機能</h1>
+                            <p>過去に見た映画、見たい映画をストックすることができます<br>評点を付けることもできるので記録を付けるだけでなく、好きな映画のコレクションを作ることもできます</p>
+                        </div>
+                    </div>
+                    <div class="f_card_video">
+                        <video src="./img/video/video4.mp4" class="video" muted autobuffer></video>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <aside id="sub-area">
+            <nav id="nav">
+                <header id="nav__header">
+                    <div id="logo">
+                        <a href="#" class="nav_link">
+                            <div class="logo_linkset">
+                                <img src="./img/logo_transparent.png" alt="">
+                                <h4>Lab13thWiki</h4>
+                            </div>
+                        </a>
+                    </div>
+                    
+                </header>
+                <div id="nav__title">
+                    <ul id="category__title">
+                        <li>
+                            <a href="#lec_htmlncss" class="nav_link"><h1 class="title__category">HTML/CSS</h1></a>
+                        </li>
+                        <li>
+                            <a href="#lec_javascript" class="nav_link"><h1 class="title__category">JavaScript</h1></a>
+                        </li>
+                        <li>
+                            <a href="#lec_php" class="nav_link"><h1 class="title__category">PHP</h1></a>
+                        </li>
+                        <li>
+                            <a href="#lec_others" class="nav_link"><h1 class="title__category">To Be Continue...</h1></a>
+                        </li>
+                        <li>
+                            <a href="#about_filmarks" class="nav_link"><h1 class="title__category">About Filmarks</h1></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </aside>
+        <footer id="footer">
+            <div class="temp_box"><a href="https://filmarks.com/users/kanaokasatoru" target="_blank" rel="noopener noreferrer"><h1>&copy;フッターです</h1></a></div>
+        </footer>
+    </div>
+    <script>
+        $(".openbtn").click(function () {
+            $("#nav , .openbtn").toggleClass('active');
+        });
+        $(".nav_link").click(function () {
+            $("#nav , .openbtn").toggleClass('active');
+        });
+
+        $("#htmlncss1").hover(
+            function () {
+            $("#img_html").attr("src","./img/lec_htmlncss/htmlncss1.png")
+            console.log("hover!")
+            }
+        );
+        $("#htmlncss2").hover(
+            function () {
+            $("#img_html").attr("src","./img/lec_htmlncss/htmlncss2.png")
+            console.log("hover!")
+            }
+        );
+        $("#htmlncss3").hover(
+            function () {
+            $("#img_html").attr("src","./img/lec_htmlncss/jquery.png")
+            console.log("hover!")
+            }
+        );
+        $("#javascript1").hover(
+            function () {
+                $("#img_js").attr("src","./img/PXswodniW.jpg")
+                console.log("hover!")
+            }
+            );
+        $("#php1").hover(
+            function () {
+                $("#img_php").attr("src","./img/PXswodniW.jpg")
+                console.log("hover!")
+            }
+            );
+        $("#py1").hover(
+            function () {
+                $("#img_py").attr("src","./img/PXswodniW.jpg")
+                console.log("hover!")
+            }
+        );
+
+        $('.video').on('inview', function() {
+            this.play();
+        });
+
+        // const url = "https://qiita.com/ksyunnnn/items/bfe2b9c568e97bb6b494";
+
+        // fetch(url)
+        // .then(res => res.text())
+        // .then(text => {
+        //     // console.log("checked")
+        //     const el = new DOMParser().parseFromString(text, "text/html")
+        //     const headEls = (el.head.children)
+        //     Array.from(headEls).map(v => {
+        //         const prop = v.getAttribute('property')
+        //         if (!prop) return;
+        //         console.log(prop, v.getAttribute("content"))
+        //     })
+        // })
+
+        // ここにコードを記述する
+        // console.log("Hello")
+        // console.log("jq");
+        // console.log($("#js-headline"));
+        // for (let i = 0; i < 2000000; i++) {
+        //     $("#js-headline").slideUp(100);
+        //     $("#js-headline").slideDown(100);
+        // }
+        
+        // $("#btn1").on("click", function(){
+        //     console.log("click!");
+        //     $("#js-headline").text("クリックされたよ");
+        //     $("#btn2").css("background-color", "aqua")
+        // });
+        // $("#btn2").on("click", function(){
+        //     console.log("click!");
+        //     $("#js-headline").text("クリックされたよ");
+        //     $("#btn2").text("ばたん")
+        // });
+        // $("#btn2").mouseover(function(){
+        //     console.log("over!");
+        //     $("#js-headline").text("オーバーされたよ");
+        //     $("#btn2").text("ゲームオーバー")
+        // });
+
+        // $('.slider').slick({
+        //     dots: true,
+        //     infinite: true,
+        //     slidesToShow: 3,
+        //     slidesToScroll: 3
+        // });
+    </script>
+</body>
+</html>
